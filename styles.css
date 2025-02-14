@@ -27,11 +27,11 @@
     background-color: white;  /* Soft pastel blue background for calmness */
     color: white;
     position: relative;
-    padding: 0;
+    padding: 5px;
 }
 
 .hero .carousel-item {
-    height: 100vh; /* Full height for each carousel item */
+    height: 600px; /* Full height for each carousel item */
     background-size: cover;
     background-position: center;
 }
@@ -68,6 +68,7 @@
 .hero .container {
     text-align: center;
     z-index: 100; /* Ensure text and button are on top of carousel */
+    position: relative;
 }
 
 /* Text and Button Below Carousel */
@@ -88,6 +89,21 @@
 }
 
 .hero .btn-primary:hover {
+    background-color: #e6b800; /* Slightly darker yellow on hover */
+}
+
+/* Styling for the "Learn More" Button at the Bottom */
+.bottom-btn {
+    position: absolute;
+    bottom: 20px; /* Position the button near the bottom of the carousel item */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    background-color: #ffcc66; /* Calming yellow for the button */
+    border-color: #ffcc66;
+}
+
+.bottom-btn:hover {
     background-color: #e6b800; /* Slightly darker yellow on hover */
 }
 
