@@ -1,1 +1,23 @@
-    
+/* Custom Navbar Styles */
+.navbar.navbar-light {
+    background-color: #7cabc5 !important; /* Soft Pastel Blue */
+}
+
+.navbar.navbar-light .navbar-brand {
+    color: white !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c6d8e1 !important; /* Light gray-blue for hover effect */
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffcc66 !important; /* Calming Pastel Yellow for active link */
+}
