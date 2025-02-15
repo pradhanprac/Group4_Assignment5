@@ -1,40 +1,73 @@
 /* Navbar Styles */
-.navbar.navbar-light {
-    background-color: #7cabc5 !important; /* Soft Pastel Blue */
+.navbar {
+    background-color: #1a1a1a !important; /* Dark theme */
 }
 
-.navbar.navbar-light .navbar-brand {
-    color: white !important;
-    font-size: 1.8rem;
+.navbar .navbar-brand {
+    font-size: 2rem; /* Increased from 1.8rem */
     font-weight: bold;
+    color: #ffc107 !important; /* Stock market theme yellow */
 }
 
 .navbar-nav .nav-link {
+    font-size: 1.2rem; /* Increased from default 1rem */
     color: white !important;
     transition: color 0.3s ease;
+    font-weight: 500;
+    padding: 10px 15px; /* Add some spacing */
 }
 
 .navbar-nav .nav-link:hover {
-    color: #c6d8e1 !important; /* Light gray-blue for hover effect */
+    color: #ffc107 !important; /* Yellow highlight on hover */
 }
 
 .navbar-nav .nav-link.active {
-    color: #ffcc66 !important; /* Calming Pastel Yellow for active link */
+    color: #ffcc00 !important; /* Active link */
+}
+
+/* Search Bar */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form .form-control {
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid #ffc107;
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    font-size: 1rem; /* Ensure input text is readable */
+}
+
+.search-form .form-control::placeholder {
+    color: #bbb;
+}
+
+.search-form .btn-warning {
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 8px 15px;
+    font-size: 1rem; /* Make button text larger */
 }
 
 /* Login Button */
 .login-btn {
-    border: 2px solid white;
-    padding: 5px 15px;
+    font-size: 1.1rem; /* Increase login button text size */
+    padding: 8px 18px; /* Make button slightly larger */
+    border: 2px solid #ffc107;
     border-radius: 20px;
     font-weight: bold;
     transition: all 0.3s ease;
+    color: #ffc107 !important;
 }
 
 .login-btn:hover {
-    background-color: white;
-    color: #7cabc5 !important;
+    background-color: #ffc107;
+    color: #1a1a1a !important;
 }
+
 
 /* Hero Section */
 .hero {
