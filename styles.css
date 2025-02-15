@@ -1,4 +1,4 @@
-/* Custom Navbar Styles */
+/* Navbar Styles */
 .navbar.navbar-light {
     background-color: #7cabc5 !important; /* Soft Pastel Blue */
 }
@@ -21,6 +21,21 @@
 .navbar-nav .nav-link.active {
     color: #ffcc66 !important; /* Calming Pastel Yellow for active link */
 }
+
+/* Login Button */
+.login-btn {
+    border: 2px solid white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: #7cabc5 !important;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
