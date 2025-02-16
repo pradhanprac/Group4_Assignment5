@@ -44,6 +44,8 @@ function handleLogin(email, password) {
     setTimeout(() => {
         button.disabled = false;
         spinner.classList.add('d-none');
+
+        window.location.href = "homepage.html";
     }, 2000);
 }
 
