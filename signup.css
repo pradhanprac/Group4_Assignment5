@@ -27,7 +27,7 @@ body {
     object-fit: cover;
 }
 
-.login-section {
+.signup-section {
     background: linear-gradient(135deg, #ffffff 0%, #72b1d8 100%);
     min-height: 100vh;
     display: flex;
@@ -36,7 +36,7 @@ body {
     padding: 2rem;
 }
 
-.login-content {
+.signup-content {
     width: 80%;
     min-height: min-content;
     max-width: none;
@@ -50,7 +50,7 @@ body {
     justify-content: center;
 }
 
-.login-content:hover {
+.signup-content:hover {
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
     transform: translateY(-2px);
     transition: all 0.3s ease;
@@ -62,6 +62,7 @@ body {
         flex: 0 0 auto;
         width: 45%;
     }
+
     .col-lg-55 {
         flex: 0 0 auto;
         width: 55%;
@@ -84,14 +85,14 @@ body {
         z-index: 1;
     }
 
-    .login-section {
+    .signup-section {
         position: relative;
         z-index: 2;
         backdrop-filter: blur(10px);
     }
 
-    .login-content {
-        width:100%;
+    .signup-content {
+        width: 100%;
         backdrop-filter: blur(10px);
         background: rgba(255, 255, 255, 0.9);
     }
@@ -135,4 +136,12 @@ body {
     padding: 0 1rem;
     color: #6c757d;
     font-size: 0.9rem;
+}
+
+.password-strength {
+    height: 5px;
+    margin-top: -12px;
+    margin-bottom: 12px;
+    border-radius: 2px;
+    transition: width 0.3s ease;
 }
