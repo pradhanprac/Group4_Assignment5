@@ -28,7 +28,7 @@ body {
 }
 
 .signup-section {
-    background: linear-gradient(135deg, #ffffff 0%, #72b1d8 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffc107 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
