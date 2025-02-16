@@ -50,3 +50,9 @@ function handleLogin(email, password) {
     }, 2000);
 }
 
+function showErrorToast(message) {
+    document.querySelector("#loginToast .toast-body").textContent = message;
+    const toast = new bootstrap.Toast(document.getElementById("loginToast"));
+    toast.show();
+}
+
