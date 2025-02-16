@@ -69,97 +69,156 @@
     color: #1a1a1a !important;
 }
 
-
 /* Hero Section */
 .hero {
-    min-height: 100vh;
-    background-color: white;  /* Soft pastel blue background for calmness */
+    min-height: 500px;  /* Ensure minimum height of the hero section */
+    background-color: white;
     color: rgb(255, 255, 255);
     position: relative;
     padding: 5px;
+    overflow: hidden;  /* Ensure no overflow of images or elements */
 }
 
+/* Carousel Item */
 .hero .carousel-item {
-    height: 600px; /* Full height for each carousel item */
-    background-size: cover;
-    background-position: center;
+    height: 100%;  /* Ensure each carousel item takes the full height */
+    min-height: 600px;  /* Minimum height for each carousel item */
+    background-size: cover;  /* Ensure the image covers the entire space */
+    background-position: center;  /* Center the background image */
 }
+
+/* Ensure the image always covers the entire carousel space */
+.hero .carousel-item img {
+    width: 100%;  /* Ensure the image takes up the full width */
+    height: 100%;  /* Ensure the image takes up the full height */
+    object-fit: cover;  /* Make sure the image covers the full space without distortion */
+    object-position: center center;  /* Keep the image centered */
+}
+
 /* Transparent background behind carousel text */
 .hero .carousel-caption {
-    background-color: rgba(115, 92, 92, 0.4);  /* Semi-transparent black background */
-    padding: 10px 20px;  /* Adjust padding to fit text neatly */
-    border-radius: 10px;  /* Optional: Adds rounded corners */
+    background-color: rgba(115, 92, 92, 0.4);  /* Semi-transparent background */
+    padding: 20px 30px;
+    border-radius: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
-    height: 200px; /* Ensure the height adjusts to fit the text */
-    max-width: 80%;  /* Optional: Limit the width to prevent too long of a line */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    max-width: 80%;
+    width: auto;
+    height: 200px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* Adjusting text styles */
 .hero .carousel-caption h5 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: white; /* Ensure text is visible on the transparent background */
-    margin-bottom: 10px;  /* Optional: Adds space below the heading */
+    color: white;
+    margin-bottom: 10px;
 }
 
 .hero .carousel-caption p {
     font-size: 1.25rem;
     font-weight: 300;
-    color: white; /* Ensure text is visible on the transparent background */
+    color: white;
 }
 
-
-.hero .container {
-    text-align: center;
-    z-index: 100; /* Ensure text and button are on top of carousel */
-    position: relative;
-}
-
-/* Text and Button Below Carousel */
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-top: 2rem;
-}
-
-.hero p {
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-}
-
-.hero .btn-primary {
-    background-color: #ffcc66; /* Calming yellow for the button */
-    border-color: #ffcc66;
-}
-
-.hero .btn-primary:hover {
-    background-color: #e6b800; /* Slightly darker yellow on hover */
-}
-
-/* Styling for the "Learn More" Button at the Bottom */
+/* "Learn More" button */
 .bottom-btn {
     position: absolute;
-    bottom: 20px; /* Position the button near the bottom of the carousel item */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
-    background-color: #ffcc66; /* Calming yellow for the button */
+    background-color: #ffcc66;
     border-color: #ffcc66;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .bottom-btn:hover {
-    background-color: #e6b800; /* Slightly darker yellow on hover */
+    background-color: #e6b800;
 }
 
 /* Carousel Control Buttons */
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #5cacee; /* Soft blue for control buttons */
+    background-color: #5cacee;
 }
+
+/* Ensure responsiveness */
+@media (max-width: 992px) {
+    /* Ensure carousel items cover the entire space on smaller screens */
+    .hero .carousel-item {
+        height: 100vh;  /* Full viewport height */
+    }
+
+    /* Adjust text padding */
+    .hero .carousel-caption {
+        padding: 15px 20px;
+        max-width: 90%;
+        height: 180px;
+    }
+
+    .hero .carousel-caption h5 {
+        font-size: 1.8rem;
+    }
+
+    .hero .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .bottom-btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero .carousel-caption {
+        padding: 15px 20px;
+        max-width: 90%;
+        height: 180px;
+    }
+
+    .hero .carousel-caption h5 {
+        font-size: 1.8rem;
+    }
+
+    .hero .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .bottom-btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .carousel-caption {
+        padding: 10px 15px;
+        max-width: 95%;
+        height: 150px;
+    }
+
+    .hero .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .hero .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .bottom-btn {
+        padding: 8px 12px;
+    }
+}
+
 /* Footer Styles */
 .footer {
     background-color: #1a1a1a; /* Dark background for stock market theme */
@@ -217,13 +276,3 @@
 }
 
 
-/* Ensure responsiveness */
-@media (max-width: 768px) {
-    .hero .carousel-caption h5 {
-        font-size: 1.5rem; /* Smaller text for mobile */
-    }
-
-    .hero .carousel-caption p {
-        font-size: 1rem; /* Smaller text for mobile */
-    }
-}
