@@ -24,9 +24,7 @@ function handleLogin(email, password) {
     var password = document.querySelector('#passwordInput').value;
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     
-    console.log("handlefunc", email)
     if (!emailRegex.test(email)) {
-        console.log("inside email")
         showErrorToast("Invalid email format");
         return;
     }
@@ -34,7 +32,6 @@ function handleLogin(email, password) {
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/;
     
     if (!passwordRegex.test(password)) {
-        console.log("inside pwd")
         showErrorToast("Password must be at least 8 characters long and include uppercase, lowercase, and a number");
         return;
     }
