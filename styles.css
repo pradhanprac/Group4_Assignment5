@@ -1,46 +1,80 @@
+
 /* Navbar Styles */
-.navbar.navbar-light {
-    background-color: #7cabc5 !important; /* Soft Pastel Blue */
+.navbar {
+    background-color: #1a1a1a !important; /* Dark theme */
 }
 
-.navbar.navbar-light .navbar-brand {
-    color: white !important;
-    font-size: 1.8rem;
+.navbar .navbar-brand {
+    font-size: 2rem; /* Increased from 1.8rem */
     font-weight: bold;
+    color: #ffc107 !important; /* Stock market theme yellow */
 }
 
 .navbar-nav .nav-link {
+    font-size: 1.2rem; /* Increased from default 1rem */
     color: white !important;
     transition: color 0.3s ease;
+    font-weight: 500;
+    padding: 10px 15px; /* Add some spacing */
 }
 
 .navbar-nav .nav-link:hover {
-    color: #c6d8e1 !important; /* Light gray-blue for hover effect */
+    color: #ffc107 !important; /* Yellow highlight on hover */
 }
 
 .navbar-nav .nav-link.active {
-    color: #ffcc66 !important; /* Calming Pastel Yellow for active link */
+    color: #ffcc00 !important; /* Active link */
+}
+
+/* Search Bar */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form .form-control {
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid #ffc107;
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    font-size: 1rem; /* Ensure input text is readable */
+}
+
+.search-form .form-control::placeholder {
+    color: #bbb;
+}
+
+.search-form .btn-warning {
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 8px 15px;
+    font-size: 1rem; /* Make button text larger */
 }
 
 /* Login Button */
 .login-btn {
-    border: 2px solid white;
-    padding: 5px 15px;
+    font-size: 1.1rem; /* Increase login button text size */
+    padding: 8px 18px; /* Make button slightly larger */
+    border: 2px solid #ffc107;
     border-radius: 20px;
     font-weight: bold;
     transition: all 0.3s ease;
+    color: #ffc107 !important;
 }
 
 .login-btn:hover {
-    background-color: white;
-    color: #7cabc5 !important;
+    background-color: #ffc107;
+    color: #1a1a1a !important;
 }
+
 
 /* Hero Section */
 .hero {
     min-height: 100vh;
     background-color: white;  /* Soft pastel blue background for calmness */
-    color: white;
+    color: rgb(255, 255, 255);
     position: relative;
     padding: 5px;
 }
@@ -52,7 +86,7 @@
 }
 /* Transparent background behind carousel text */
 .hero .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.4);  /* Semi-transparent black background */
+    background-color: rgba(115, 92, 92, 0.4);  /* Semi-transparent black background */
     padding: 10px 20px;  /* Adjust padding to fit text neatly */
     border-radius: 10px;  /* Optional: Adds rounded corners */
     position: absolute;
@@ -126,6 +160,62 @@
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: #5cacee; /* Soft blue for control buttons */
 }
+/* Footer Styles */
+.footer {
+    background-color: #1a1a1a; /* Dark background for stock market theme */
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    text-align: center; /* Center the text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer Container */
+.footer .container {
+    max-width: 1200px;
+    width: 90%;
+}
+
+/* Footer Headings */
+.footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffc107;
+}
+
+/* Footer Links */
+.footer a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffdb4d;
+}
+
+/* Footer Social Icons */
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #ffc107;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffdb4d;
+}
+
 
 /* Ensure responsiveness */
 @media (max-width: 768px) {
