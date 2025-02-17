@@ -156,6 +156,115 @@
     </div>
 </section>
 
+<!-- Market Overview Section -->
+<section class="market-overview py-5" style="background-color: #1a1a1a;">
+    <div class="container">
+        <h2 class="text-center mb-4 text-warning fw-bold">Market Overview</h2>
+        
+        <!-- Market indices in a responsive table -->
+        <div class="table-responsive shadow-lg rounded">
+            <table class="table table-dark table-hover mb-0">
+                <thead>
+                    <tr class="text-warning">
+                        <th scope="col">Index</th>
+                        <th scope="col">Value</th>
+                        <th scope="col">Change</th>
+                        <th scope="col">% Change</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- S&P 500 -->
+                    <tr class="align-middle">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <span class="fs-5 fw-bold">S&P 500</span>
+                            </div>
+                        </td>
+                        <td class="fw-bold text-white">4,927.21</td>
+                        <td class="text-success">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-arrow-up-circle-fill me-2"></i>
+                                +32.41
+                            </div>
+                        </td>
+                        <td class="text-success">+0.66%</td>
+                        <td>
+                            <div class="progress" style="height: 8px; width: 100px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- NASDAQ -->
+                    <tr class="align-middle">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <span class="fs-5 fw-bold">NASDAQ</span>
+                            </div>
+                        </td>
+                        <td class="fw-bold text-white">15,628.95</td>
+                        <td class="text-success">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-arrow-up-circle-fill me-2"></i>
+                                +78.94
+                            </div>
+                        </td>
+                        <td class="text-success">+0.51%</td>
+                        <td>
+                            <div class="progress" style="height: 8px; width: 100px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%"></div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Dow Jones -->
+                    <tr class="align-middle">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <span class="fs-5 fw-bold">Dow Jones</span>
+                            </div>
+                        </td>
+                        <td class="fw-bold text-white">38,671.69</td>
+                        <td class="text-danger">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-arrow-down-circle-fill me-2"></i>
+                                -145.13
+                            </div>
+                        </td>
+                        <td class="text-danger">-0.37%</td>
+                        <td>
+                            <div class="progress" style="height: 8px; width: 100px;">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Additional Market Stats -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <i class="bi bi-lightning-charge-fill me-2"></i>
+                    <div>
+                        Market Volatility Index (VIX): <strong>14.21</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="alert alert-info d-flex align-items-center" role="alert">
+                    <i class="bi bi-clock-fill me-2"></i>
+                    <div>
+                        Last Updated: <strong>2 mins ago</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
 <!-- Footer Section -->
 <footer class="footer bg-dark text-white pt-4">
     <div class="container">
