@@ -29,6 +29,9 @@ Since our porject topic is related to stocks we have chosen similar theme where 
 - **Navbar-brand**: Logo/website name in the navigation bar
 - **Navbar-toggler**: Hamburger menu button for mobile responsiveness
 - **Nav-link**: Individual navigation links in the navbar
+- **Nav-pills**: Tabbed navigation for news categories
+- **Tab-content**: Content sections for tabbed navigation
+- **Tab-pane**: Individual tab content containers
 
 ## Form Components
 - **Form-floating**: Floating label form inputs used in login/signup forms
@@ -47,6 +50,9 @@ Since our porject topic is related to stocks we have chosen similar theme where 
 - **Toast**: Pop-up notifications for error messages
 - **Toast-header**: Header section of toast notifications
 - **Toast-body**: Content section of toast notifications
+- **Alert**: Context-based notification messages
+- **Alert-warning**: Warning-styled alerts
+- **Alert-info**: Information-styled alerts
 
 ## Modal Components
 - **Modal**: Popup dialog for forgot password functionality
@@ -62,6 +68,29 @@ Since our porject topic is related to stocks we have chosen similar theme where 
 - **D-flex**: Flexbox display utility
 - **Position-relative**: Positioning utility
 
+## Table Components
+- **Table**: Basic table structure
+- **Table-responsive**: Horizontal scrolling tables on mobile
+- **Table-dark**: Dark-themed table styling
+- **Table-hover**: Hover effects on table rows
+
+## Progress Components
+- **Progress**: Container for progress bars
+- **Progress-bar**: Visual indicator bar
+- **Progress-bar-striped**: Striped styling for progress bars
+
+## Accordion Components
+- **Accordion**: Collapsible content sections
+- **Accordion-item**: Individual accordion sections
+- **Accordion-header**: Header for accordion items
+- **Accordion-button**: Toggle button for accordion
+- **Accordion-collapse**: Collapsible content area
+
+## List Group Components
+- **List-group**: Container for list items
+- **List-group-item**: Individual list items
+- **List-group-item-action**: Interactive list items
+
 ## Carousel Components
 - **Carousel**: Slideshow for cycling through elements
 - **Carousel-item**: Individual slides in the carousel
@@ -71,6 +100,8 @@ Since our porject topic is related to stocks we have chosen similar theme where 
 ## Badge Components
 - **Badge**: Small count and labeling component
 - **Badge-social**: Custom styled badges for social media icons
+- **Badge-pill**: Rounded badge style
+- **Badge bg-danger**: Contextual badge colors
 
 ## Card Components
 - **Card**: Container for content and actions
@@ -82,10 +113,14 @@ Since our porject topic is related to stocks we have chosen similar theme where 
 - **Bg-dark**: Dark background
 - **Text-white**: White text color
 - **Shadow-sm**: Small shadow effect
+- **Shadow-lg**: Large shadow effect
 - **P-3**: Padding utility
 - **Mb-4**: Margin bottom utility
 - **G-0**: Gap utility for grid
 - **W-100**: Width utility
+- **Rounded**: Border radius utility
+- **Justify-content-between**: Flex justification
+- **Align-items-center**: Flex alignment
 
 
 ## Setup Instructions

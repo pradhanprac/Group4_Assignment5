@@ -51,7 +51,7 @@ function handleLogin(email, password) {
         button.disabled = false;
         spinner.classList.add('d-none');
 
-        window.location.href = "homepage.html";
+        window.location.href = "../homepage.html";
     }, 2000);
 }
 
@@ -98,7 +98,7 @@ function handleSignup(event) {
                 button.disabled = false;
                 spinner.classList.add('d-none');
             }
-            window.location.href = "homepage.html";
+            window.location.href = "../homepage.html";
         }, 2000);
     }
 }
