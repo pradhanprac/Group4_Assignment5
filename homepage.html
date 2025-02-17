@@ -156,7 +156,6 @@
     </div>
 </section>
 
-<!-- Market Overview Section -->
 <section class="market-overview py-5" style="background-color: #1a1a1a;">
     <div class="container">
         <h2 class="text-center mb-4 text-warning fw-bold">Market Overview</h2>
@@ -243,7 +242,7 @@
             </table>
         </div>
 
-        <!-- Additional Market Stats -->
+      
         <div class="row mt-4">
             <div class="col-md-6">
                 <div class="alert alert-warning d-flex align-items-center" role="alert">
@@ -265,17 +264,140 @@
     </div>
   </section>
 
-<!-- Footer Section -->
+<section class="market-news py-5" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);">
+    <div class="container">
+        <h2 class="text-center mb-4 text-warning fw-bold">Latest Market News</h2>
+
+      
+        <ul class="nav nav-pills mb-4 justify-content-center" id="newsTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active text-warning" data-bs-toggle="pill" data-bs-target="#trending" type="button">Trending</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-warning" data-bs-toggle="pill" data-bs-target="#stocks" type="button">Stocks</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-warning" data-bs-toggle="pill" data-bs-target="#crypto" type="button">Crypto</button>
+            </li>
+        </ul>
+
+       
+        <div class="tab-content" id="newsTabContent">
+          
+            <div class="tab-pane fade show active" id="trending">
+                <div class="list-group">
+                   
+                    <div class="list-group-item border-0 mb-3 news-item featured" style="background: rgba(33, 37, 41, 0.9);">
+                        <div class="row g-0">
+                            <div class="col-md-4 position-relative">
+                                <img src="/api/placeholder/400/300" class="img-fluid rounded" alt="Featured news">
+                                <span class="badge bg-danger position-absolute top-0 start-0 m-2">Breaking</span>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="p-3">
+                                    <h5 class="text-warning">Federal Reserve Announces New Interest Rate Decision</h5>
+                                    <p class="text-white-50">The Federal Reserve's latest policy meeting concludes with a crucial decision on interest rates, impacting market dynamics...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">2 hours ago</small>
+                                        <button class="btn btn-outline-warning btn-sm">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="accordion" id="newsAccordion">
+                        
+                        <div class="accordion-item border-0 mb-2" style="background: rgba(33, 37, 41, 0.9);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#news1">
+                                    <i class="bi bi-graph-up-arrow text-success me-2"></i>
+                                    Tech Stocks Rally Amid Positive Earnings Reports
+                                </button>
+                            </h2>
+                            <div id="news1" class="accordion-collapse collapse" data-bs-parent="#newsAccordion">
+                                <div class="accordion-body text-white-50">
+                                    Major tech companies exceed quarterly expectations, driving market optimism...
+                                    <div class="mt-2">
+                                        <small class="text-muted">1 hour ago</small>
+                                        <button class="btn btn-outline-warning btn-sm float-end">Full Story</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Item 2 -->
+                        <div class="accordion-item border-0 mb-2" style="background: rgba(33, 37, 41, 0.9);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#news2">
+                                    <i class="bi bi-currency-dollar text-warning me-2"></i>
+                                    Global Markets Respond to Economic Data
+                                </button>
+                            </h2>
+                            <div id="news2" class="accordion-collapse collapse" data-bs-parent="#newsAccordion">
+                                <div class="accordion-body text-white-50">
+                                    International markets show mixed reactions to latest economic indicators...
+                                    <div class="mt-2">
+                                        <small class="text-muted">3 hours ago</small>
+                                        <button class="btn btn-outline-warning btn-sm float-end">Full Story</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Item 3 -->
+                        <div class="accordion-item border-0 mb-2" style="background: rgba(33, 37, 41, 0.9);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#news3">
+                                    <i class="bi bi-briefcase-fill text-info me-2"></i>
+                                    Major Merger Announcement Shakes Industry
+                                </button>
+                            </h2>
+                            <div id="news3" class="accordion-collapse collapse" data-bs-parent="#newsAccordion">
+                                <div class="accordion-body text-white-50">
+                                    Two leading companies announce unexpected merger plans...
+                                    <div class="mt-2">
+                                        <small class="text-muted">4 hours ago</small>
+                                        <button class="btn btn-outline-warning btn-sm float-end">Full Story</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="tab-pane fade" id="stocks">
+               
+                <div class="alert alert-warning text-center">
+                    Loading stock news...
+                </div>
+            </div>
+
+            
+            <div class="tab-pane fade" id="crypto">
+               
+                <div class="alert alert-warning text-center">
+                    Loading crypto news...
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <footer class="footer bg-dark text-white pt-4">
     <div class="container">
         <div class="row">
-            <!-- About Section -->
+            
             <div class="col-md-4">
                 <h5>About StockWise</h5>
                 <p>Stay ahead in the market with real-time stock updates, advanced trading tools, and expert insights to help you make informed investment decisions.</p>
             </div>
 
-            <!-- Quick Links -->
+         
             <div class="col-md-4">
                 <h5>Quick Links</h5>
                 <ul class="list-unstyled">
@@ -286,7 +408,7 @@
                 </ul>
             </div>
 
-            <!-- Contact Information -->
+           
             <div class="col-md-4">
                 <h5>Contact Us</h5>
                 <ul class="list-unstyled">
@@ -299,7 +421,7 @@
 
         <hr class="bg-light">
 
-        <!-- Social Media & Copyright -->
+        
         <div class="row text-center">
             <div class="col">
                 <p>© 2025 StockWise. All Rights Reserved.</p>
