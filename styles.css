@@ -5,25 +5,25 @@
 }
 
 .navbar .navbar-brand {
-    font-size: 2rem; /* Increased from 1.8rem */
+    font-size: 2rem; 
     font-weight: bold;
-    color: #ffc107 !important; /* Stock market theme yellow */
+    color: #ffc107 !important; 
 }
 
 .navbar-nav .nav-link {
-    font-size: 1.2rem; /* Increased from default 1rem */
+    font-size: 1.2rem; 
     color: white !important;
     transition: color 0.3s ease;
     font-weight: 500;
-    padding: 10px 15px; /* Add some spacing */
+    padding: 10px 15px; 
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffc107 !important; /* Yellow highlight on hover */
+    color: #ffc107 !important; 
 }
 
 .navbar-nav .nav-link.active {
-    color: #ffcc00 !important; /* Active link */
+    color: #ffcc00 !important; 
 }
 
 /* Search Bar */
@@ -39,7 +39,7 @@
     background-color: #333;
     color: white;
     padding: 8px;
-    font-size: 1rem; /* Ensure input text is readable */
+    font-size: 1rem; 
 }
 
 .search-form .form-control::placeholder {
@@ -50,13 +50,13 @@
     border-radius: 20px;
     font-weight: bold;
     padding: 8px 15px;
-    font-size: 1rem; /* Make button text larger */
+    font-size: 1rem; 
 }
 
 /* Login Button */
 .login-btn {
-    font-size: 1.1rem; /* Increase login button text size */
-    padding: 8px 18px; /* Make button slightly larger */
+    font-size: 1.1rem; 
+    padding: 8px 18px; 
     border: 2px solid #ffc107;
     border-radius: 20px;
     font-weight: bold;
@@ -71,33 +71,33 @@
 
 /* Hero Section */
 .hero {
-    min-height: 300px;  /* Ensure minimum height of the hero section */
+    min-height: 300px;  
     background-color: white;
     color: rgb(255, 255, 255);
     position: relative;
     padding: 5px;
-    overflow: hidden;  /* Ensure no overflow of images or elements */
+    overflow: hidden;  
 }
 
 /* Carousel Item */
 .hero .carousel-item {
-    height: 650px;  /* Ensure each carousel item takes the full height */
-    min-height: 300px;  /* Minimum height for each carousel item */
-    background-size: cover;  /* Ensure the image covers the entire space */
-    background-position: center;  /* Center the background image */
+    height: 650px;  
+    min-height: 300px;  
+    background-size: cover;  
+    background-position: center;  
 }
 
-/* Ensure the image always covers the entire carousel space */
+
 .hero .carousel-item img {
-    width: 100%;  /* Ensure the image takes up the full width */
-    height: 100%;  /* Ensure the image takes up the full height */
-    object-fit: cover;  /* Make sure the image covers the full space without distortion */
-    object-position: center center;  /* Keep the image centered */
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+    object-position: center center;  
 }
 
-/* Transparent background behind carousel text */
+
 .hero .carousel-caption {
-    background-color: rgba(115, 92, 92, 0.4);  /* Semi-transparent background */
+    background-color: rgba(115, 92, 92, 0.4); 
     padding: 20px 30px;
     border-radius: 10px;
     position: absolute;
@@ -114,7 +114,7 @@
     overflow: hidden;
 }
 
-/* Adjusting text styles */
+
 .hero .carousel-caption h5 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -152,14 +152,14 @@
     background-color: #5cacee;
 }
 
-/* Ensure responsiveness */
+
 @media (max-width: 992px) {
-    /* Ensure carousel items cover the entire space on smaller screens */
+    
     .hero .carousel-item {
-        height: 100vh;  /* Full viewport height */
+        height: 100vh;  
     }
 
-    /* Adjust text padding */
+    
     .hero .carousel-caption {
         padding: 15px 20px;
         max-width: 90%;
@@ -223,18 +223,18 @@
     border: none;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 400px; /* Set a fixed height for the cards */
+    height: 400px; 
 }
 
 .cards-section .card-img-top {
     border-radius: 10px 10px 0 0;
     object-fit: cover;
-    height: 200px; /* Fixed height for the card image */
+    height: 200px; 
 }
 
 .cards-section .card-body {
     padding: 1rem;
-    overflow: hidden; /* Prevent content from overflowing */
+    overflow: hidden; 
 }
 
 .cards-section .card-title {
@@ -245,7 +245,7 @@
 .cards-section .card-text {
     font-size: 1rem;
     color: #6c757d;
-    margin-bottom: 1rem; /* Consistent spacing */
+    margin-bottom: 1rem; 
 }
 
 .cards-section .btn-warning {
@@ -253,7 +253,7 @@
     border-color: #ffc107;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    margin-top: auto; /* Push button to the bottom */
+    margin-top: auto; 
 }
 
 .cards-section .card:hover {
@@ -261,14 +261,14 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure responsiveness and consistency across screen sizes */
+
 @media (max-width: 768px) {
     .cards-section .card {
-        height: 400px; /* Keep height consistent */
+        height: 400px; 
     }
 
     .cards-section .card-img-top {
-        height: 200px; /* Keep the image size consistent */
+        height: 200px; 
     }
 
     .cards-section .card-body {
@@ -286,11 +286,11 @@
 
 @media (max-width: 480px) {
     .cards-section .card {
-        height: 400px; /* Maintain card size */
+        height: 400px; 
     }
 
     .cards-section .card-img-top {
-        height: 200px; /* Maintain image size */
+        height: 200px; 
     }
 }
 
@@ -300,7 +300,7 @@
     color: white;
     padding: 20px 0;
     font-size: 0.9rem;
-    text-align: center; /* Center the text */
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
