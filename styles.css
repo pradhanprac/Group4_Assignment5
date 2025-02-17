@@ -71,7 +71,7 @@
 
 /* Hero Section */
 .hero {
-    min-height: 500px;  /* Ensure minimum height of the hero section */
+    min-height: 300px;  /* Ensure minimum height of the hero section */
     background-color: white;
     color: rgb(255, 255, 255);
     position: relative;
@@ -81,8 +81,8 @@
 
 /* Carousel Item */
 .hero .carousel-item {
-    height: 100%;  /* Ensure each carousel item takes the full height */
-    min-height: 600px;  /* Minimum height for each carousel item */
+    height: 650px;  /* Ensure each carousel item takes the full height */
+    min-height: 300px;  /* Minimum height for each carousel item */
     background-size: cover;  /* Ensure the image covers the entire space */
     background-position: center;  /* Center the background image */
 }
@@ -216,6 +216,81 @@
 
     .bottom-btn {
         padding: 8px 12px;
+    }
+}
+/* Cards Section Styles */
+.cards-section .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 400px; /* Set a fixed height for the cards */
+}
+
+.cards-section .card-img-top {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 200px; /* Fixed height for the card image */
+}
+
+.cards-section .card-body {
+    padding: 1rem;
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+.cards-section .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cards-section .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1rem; /* Consistent spacing */
+}
+
+.cards-section .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Push button to the bottom */
+}
+
+.cards-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure responsiveness and consistency across screen sizes */
+@media (max-width: 768px) {
+    .cards-section .card {
+        height: 400px; /* Keep height consistent */
+    }
+
+    .cards-section .card-img-top {
+        height: 200px; /* Keep the image size consistent */
+    }
+
+    .cards-section .card-body {
+        padding: 1rem;
+    }
+
+    .cards-section .card-title {
+        font-size: 1.25rem;
+    }
+
+    .cards-section .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-section .card {
+        height: 400px; /* Maintain card size */
+    }
+
+    .cards-section .card-img-top {
+        height: 200px; /* Maintain image size */
     }
 }
 
