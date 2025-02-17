@@ -56,6 +56,10 @@ body {
     transition: all 0.3s ease;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 /* Desktop layout */
 @media (min-width: 992px) {
     .col-lg-45 {
